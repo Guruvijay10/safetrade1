@@ -1,0 +1,30 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-title> <strong>Safe Pay</strong> </ion-title>
+    <ion-buttons slot="end">
+      <ion-button >
+        <ion-icon name="notifications-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+ <ion-slides [options]="slideOpts">
+   <ion-slide *ngFor='let i of [1,2,3,4,5]'>
+    <ion-card>
+      <ion-card-header>
+        <ion-button>
+          <ion-icon name="share"></ion-icon>
+        </ion-button>
+      </ion-card-header>
+
+      <ion-card-content>
+        <span>Send <br> Money</span>
+        <br><br>
+        <a>To acc to acc</a>
+      </ion-card-content>
+    </ion-card>
+   </ion-slide>
+ </ion-slides>
+</ion-content>

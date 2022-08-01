@@ -1,0 +1,27 @@
+
+<ion-app>
+  <ion-content>
+      <div id="header">
+         
+        <h1 style="font-family:verdana" color="#f2f2f2" >Login</h1>
+      <form  name="login form" #frm="ngForm" (submit)="logindata_(frm)" novalidate>
+        
+          <ion-input class="container" #username="ngModel" ngModel type="email"
+          placeholder="username"></ion-input>    
+                                       
+        <ion-input class="container"   #password="ngModel" ngModel type="password" 
+        placeholder="Enter password" > </ion-input>
+      
+      <ion-button color="primary"  type="submit"> Login </ion-button>
+
+     
+      </form>
+      <ion-icon style="color:white;"class="my-icon" name="finger-print-outline"></ion-icon>
+      <span style="color:white;"> login using Biometrics </span>
+    </div>
+
+  </ion-content>
+
+
+</ion-app>
+
